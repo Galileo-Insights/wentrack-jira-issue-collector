@@ -1,36 +1,80 @@
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  <style>
-    #atlwdg-blanket {
-      background: white !important;
-      opacity: 1 !important;
-    }
-  </style>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <link href="reset.css" rel="stylesheet" />
+  <link href="styles.css" rel="stylesheet" />
 </head>
-<body>
-  <h1>Testing</h1>
-  <script type="text/javascript" src="https://wentrack.atlassian.net/s/d41d8cd98f00b204e9800998ecf8427e-T/sb53l8/b/24/bc54840da492f9ca037209037ef0522a/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?locale=en-US&collectorId=1b7d2201"></script>
 
-  
+<body>
+
+  <script type="text/javascript"
+    src="https://wentrack.atlassian.net/s/d41d8cd98f00b204e9800998ecf8427e-T/sb53l8/b/24/bc54840da492f9ca037209037ef0522a/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?locale=en-US&collectorId=1b7d2201"></script>
+
+
   <script type="text/javascript">
     $(document).ready(function () {
       window.ATL_JQ_PAGE_PROPS = {
-          "triggerFunction": function (showCollectorDialog) {
-              $(document).ready(function () {
-                  showCollectorDialog();
-
-              });
-          }
+        "triggerFunction": function (showCollectorDialog) {
+          $("#myCustomTrigger").click(function (e) {
+            e.preventDefault();
+            showCollectorDialog();
+          });
+        }
       }
     });
   </script>
 
-  <button id="myCustomTrigger">click</button>
+  <h1>Submit A Request</h1>
+  <p class="alert">Please copy the below Submission Template to your clipboard, and then click the button at the bottom to start your request. Paste the template into the Description field of the form. Thanks for your submission. We’ll be in touch with expected arrival of your insights!</p>
+  
+  <blockquote class="snippet">
+    <p>
+      <strong>High-level Description:</strong>
+    </p>
+    <p><em>i.e. We are getting ready to launch Bourbon Bacon Cheeseburger and would like to understand overall performance and engagement from a digital perspective. We hope to understand how our email and push sends performed, as well as a look at key trends seen in app, web and kiosk related to Bourbon Bacon Purchases and Purchasers.</em></p>
+    
+    <p><strong>Specific Data/Metrics Requested:</strong></p>
+    <ul>
+      <li><em>i.e. Bourbon Bacon Purchases</em></li>
+      <li><em>i.e. Bourbon Bacon Email Performance Metrics</em></li>
+      <li><em>i.e. Bourbon Bacon Push Notification Performance Metrics</em></li>
+      <li><em>i.e. Demographic info for users who have purchased Bourbon Bacon </em></li>
+    </ul>
+
+    <p><strong>Date Range(s):</strong></p>
+    <p><em>Required date range(s) for data pull – please be as specific as possible.</em></p>
+    
+    <p>
+      <strong>[  ] One-Time Pull</strong>&nbsp;&nbsp;<strong>[  ] Recurring</strong><br />
+      <em>(if recurring, please note requested cadence i.e. ‘monthly’)</em>
+    </p>
+
+    <p><strong>Comparison Period(s):</strong></p>
+    <p><em>(i.e. prior period, previous year, etc.)</em></p>
+    
+    <p><strong>Channel:</strong></p>
+    <p><em>App, web, kiosk, or Multiple (please specify)</em></p>
+    
+    <p><strong>Country:</strong></p>
+    <p><em>US, Canada, Multiple (please specify)</em></p>
+    
+    <p><strong>Requested Date for Completion</strong></p>
+    <p><em>When is this data needed?</em></p>
+    
+    <p><strong>Preferred Delivery Format:</strong></p>
+    <p><em>CSV/excel, report, no preference, etc. (will accommodate preferred format if available/applicable)</em></p>
+    
+    <p><strong>Additional Info/Context:</strong></p>
+    <p><em>Opportunity to provide any additional context or supplemental data to aid in data pull.</em></p>
+  </blockquote>
+  <button id="myCustomTrigger">Start a Request</button>
 
 </body>
+
 </html>

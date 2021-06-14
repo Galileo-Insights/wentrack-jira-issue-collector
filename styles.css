@@ -1,0 +1,35 @@
+body {
+  font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+  color: rgb(50, 49, 48);
+}
+
+button {
+  background-color: #0078d4;
+  border: none;
+  color: white;
+  padding: 4px 12px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button:hover {
+  filter: opacity(.9);
+}
+
+#atlwdg-blanket {
+  background: white !important;
+  opacity: 1 !important;
+}
+
+.snippet {
+  background: #efefef;
+  font-size: .85em;
+  padding: 1em;
+  border-radius: 3px;
+}
+
+.alert {
+  background: #0078d430;
+  border: 1px solid #0078d4;
+  padding: .5em;
+}
